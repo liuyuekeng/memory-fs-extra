@@ -1,0 +1,26 @@
+{
+  "name": "memory-fs-extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyuekeng/memory-fs-extra.git"
+  },
+  "author": "liuyuekeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuyuekeng/memory-fs-extra/issues"
+  },
+  "homepage": "https://github.com/liuyuekeng/memory-fs-extra#readme",
+  "dependencies": {
+    "memory-fs": "^0.4.1",
+    "universalify": "^0.1.2"
+  }
+}
