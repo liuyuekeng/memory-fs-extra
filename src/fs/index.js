@@ -1,4 +1,4 @@
-const MemoryFs = require('memory-fs');
+const MemoryFs = require('@liuyuekeng/memory-fs');
 const fromCallback = require('universalify').fromCallback;
 
 const api = [

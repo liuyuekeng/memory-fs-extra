@@ -1,4 +1,4 @@
-const MemoryFs = require('memory-fs');
+const MemoryFs = require('@liuyuekeng/memory-fs');
 
 class MemoryFsExtra extends MemoryFs {
 }
@@ -10,8 +10,8 @@ Object.assign(MemoryFsExtra.prototype,
     require('./copy-sync'),
     require('./copy'),
     require('./empty'),
-    //require('./ensure'),
-    //require('./json'),
+    require('./ensure'),
+    require('./json'),
     require('./klaw-sync'),
     //require('./mkdirs'),
     //require('./move-sync'),

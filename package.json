@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/liuyuekeng/memory-fs-extra#readme",
   "dependencies": {
-    "memory-fs": "^0.4.1",
+    "@liuyuekeng/memory-fs": "^0.4.2",
+    "jsonfile": "^5.0.0",
     "universalify": "^0.1.2"
   }
 }
