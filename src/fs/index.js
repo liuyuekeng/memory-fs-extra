@@ -57,7 +57,6 @@ exports.statSync = function (path) {
     return stats
 }
 
-/*
 exports.stat = fromCallback(function (path, callback) {
     let fs = this
     let res
@@ -73,7 +72,6 @@ exports.stat = fromCallback(function (path, callback) {
         callback(null, res)
     })
 })
-*/
 
 // fs.read() & fs.write need special treatment due to multiple callback args
 exports.read = function (fd, buffer, offset, length, position, callback) {

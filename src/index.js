@@ -13,12 +13,12 @@ Object.assign(MemoryFsExtra.prototype,
     require('./ensure'),
     require('./json'),
     require('./klaw-sync'),
-    //require('./mkdirs'),
-    //require('./move-sync'),
-    //require('./move'),
+    require('./mkdirs'),
+    require('./move-sync'),
+    require('./move'),
     require('./output'),
-    //require('./path-exists'),
-    //require('./remove')
+    require('./path-exists'),
+    require('./remove')
 )
 
 module.exports = MemoryFsExtra;
