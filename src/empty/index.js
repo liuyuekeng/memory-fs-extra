@@ -1,6 +1,7 @@
 'use strict'
 
 const fromCallback = require('universalify').fromCallback
+const path = require('path');
 
 const emptyDir = fromCallback(function emptyDir (dir, callback){
   let fs = this
@@ -20,14 +21,17 @@ const emptyDir = fromCallback(function emptyDir (dir, callback){
 
 function emptyDirSync (dir) {
   let fs = this
+  let items;
   try {
-    fs.readdirSync(dir)
+    items = fs.readdirSync(dir)
   } catch (err) {
     return fs.mkdirpSync(dir)
   }
 
-  fs.rmdirSync(dir);
-  fs.mkdirSync(dir);
+  items.forEach(item => {
+    let toRm = path.join(dir, item)
+    fs.removeSync(toRm);
+  });
 }
 
 module.exports = {
