@@ -61,7 +61,7 @@ exports.stat = fromCallback(function (path, callback) {
     let fs = this
     let res
     try {
-        fs.statSync(path)
+        res = fs.statSync(path)
     } catch (e) {
         setImmediate(function () {
             callback(e)
